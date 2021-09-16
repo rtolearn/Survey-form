@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UFT-8">
+  <meta name="viewport" content="width= device-width">
+  <title> Survey Form </title>
+    <style>    
+body{
+background-color: grey;
+}
+
+#title{
+    text-align: center;
+}
+
+#description{
+  text-align: center;
+  font-size: 16px;
+  font-family: cursive;
+}
+
+
+#survey-form{
+  width: 400px;
+  heigth: auto; 
+  background-color: white;
+  position: relative;
+  margin:auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#name-label{
+  width: 400px;
+}
+
+#email-label{
+  width: 400px;
+}
+
+#number-label{
+  width: 400px;
+}
+
+#reason{
+  width: 400px;
+  height: 50px;
+}
+
+#submit{
+  width: 400px;
+  Background-color: green;
+}
+   </style>
+  </head>
+  
+    <h1 id="title"> Yang's company survey form </h1>
+    
+  <p id="description"> Thanks for trusting our company  <br>  Here is a survey form for you to give any suggestions</p>
+
+
+  <form id="survey-form">
+    
+    
+  
+    <label id="name-label" for="name" >Name:</label> <br>
+    <input id="name" type="text" placeholder="Enter your name" name="name" required>
+    <br><br>
+    
+    
+
+    <label id="email-label" for="email" >Email: </label>
+    <br>
+    <input  id="email" type="email" placeholder="Enter your Email" name="email" required>
+    <br><br>
+      
+    
+
+    <label id="number-label" for="number"> Age: (<i> optional </i>)</label>
+    <br>
+    <input id="number" type="number" placeholder="Age" min="18" max="100" name="number" required>
+    
+      
+    <h5> Rate the services provided by our company. </h5>
+                                                                  
+    <div>
+    <input type="radio" name="compliment" value="nice" checked> 
+    Very nice <br>
+    <input type="radio" name="compliment" value="common"> 
+    Common<br>
+     <input type="radio" name="compliment" value="bad"> 
+    Bad
+    </div>
+    <br>
+      
+    <h5> Which part of the service of our company you do not like the most? </h5>
+    <input type="checkbox" value="products"   > Products <br>
+    <input type="checkbox" value="environment"> Shop               environment<br>
+    <input type="checkbox" value="client"     > Client<br>
+    <input type="checkbox" value="price"      > Price<br>
+    
+    <h5>Which area of our company are you talking about? </h5>
+    <select id="dropdown">
+      <option value="Penang"> Penang </option>
+      <option value="Penang"> Kuala Lumpur</option>
+      <option value="Penang"> Kedah</option>
+      <option value="Penang"> Johor</option>
+    </select>
+    
+    
+    <h5> Please tell us the reasons. </h5>
+    text
+    <input id= "reason" type="text" placeholder=" Please list down your raeasons here...">
+    <br><br>
+    <button id="submit" type="submit"> Submit </button>
+
+    
+  </form>
+  
+  
+</html>
